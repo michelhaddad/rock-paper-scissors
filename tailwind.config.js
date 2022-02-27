@@ -5,10 +5,18 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+        },
         colors: {
             ...colors,
-            'main-bg-color': 'radial-gradient(hsl(214, 47%, 23%) to hsl(237, 49%, 15%))',
+            'main-bg-from': 'hsl(214, 47%, 23%)',
+            'main-bg-to': 'hsl(237, 49%, 15%)',
+            'dark-text': 'hsl(229, 25%, 31%)',
+            'score-text': 'hsl(229, 64%, 46%)',
+            'header-outline': 'hsl(217, 16%, 45%)',
         }
     },
     plugins: [],
