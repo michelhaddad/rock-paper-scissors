@@ -9,6 +9,8 @@ import {gameStates} from "../../utils/constants/game.constants";
 export const Step2 = ({userShape, playAgain}) => {
     const [botShape, setBotShape] = useState('');
     const [gameOutcome, setGameOutcome] = useState(0);
+
+    // TODO: use an object with state as keys and text as values
     const getResultText = () => {
         switch (gameOutcome) {
             case gameStates.isUserWinner:

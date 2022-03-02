@@ -9,7 +9,7 @@
     @apply w-32 h-32 flex justify-center items-center rounded-full bg-white
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     .action-button {
         width: 8.5rem;
         height: 8.5rem;
