@@ -1,9 +1,9 @@
 import {ShapeChoice} from "../../components/ShapeChoice";
 import shapes from "../../utils/constants/shapes.constants";
 
-export const Step1 = ({setUserShape}) => {
+export const Step1 = ({pickShape}) => {
     const chooseShape = (shape) => () => {
-        setUserShape(shape)
+        pickShape(shape)
     }
 
     return (

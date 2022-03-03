@@ -13,7 +13,14 @@
     font-weight: bold;
 }
 
+html {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font-family: Barlow, sans-serif;
-    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
