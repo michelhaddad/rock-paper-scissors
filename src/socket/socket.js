@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const URL = "https://rock-paper-scissors--backend.herokuapp.com/";
+const URL = "https://rock-paper-scissors--backend.herokuapp.com";
 const socket = io(URL, { autoConnect: false });
 
 socket.onAny((event, ...args) => {
