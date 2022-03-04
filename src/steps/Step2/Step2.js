@@ -9,13 +9,22 @@ const outcomeMessages = {
     [gameStates.isDraw]: 'DRAW',
 }
 
-export const Step2 = ({userShape, playAgain, opponentShape}) => {
+export const Step2 = ({userShape, playAgain, opponentShape, incrementUserScore, incrementOpponentScore}) => {
     const [gameOutcome, setGameOutcome] = useState('');
 
     useEffect(() => {
         if (!opponentShape) return;
         const outcome = determineGameOutcome(userShape, opponentShape);
-        setTimeout(() => setGameOutcome(outcome), 1000)
+        setTimeout(() => {
+            setGameOutcome(outcome)
+            switch (outcome) {
+                case gameStates.isUserWinner:
+                    incrementUserScore()
+                    break;
+                case gameStates.isUserLoser:
+                    incrementOpponentScore();
+            }
+        }, 1000)
     }, [opponentShape])
 
     return (
