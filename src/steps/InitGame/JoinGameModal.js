@@ -17,12 +17,12 @@ export const JoinGameModal = ({joinGame, toggleJoinMenu}) => {
         <div
             className="z-20 px-4 left-0 top-0 fixed w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center">
             <div className="bg-white pt-10 pb-6 px-8 rounded-xl text-main-blue tracking-widest text-3xl">
-                <div className="flex items-center mt-12 flex-col">
+                <div className="flex items-center mt-6 flex-col">
                     <form onSubmit={handleSubmit}>
-                        <div className="space-x-4 flex items-center">
-                            <label htmlFor="game-id" className="flex-[4_0_0%]">Game ID:</label>
+                        <div className="text-center">
+                            <label htmlFor="game-id">Game ID:</label>
                             <input
-                                className="flex-[8_0_0%] shadow appearance-none border border-main-blue rounded w-full
+                                className="mt-4 shadow appearance-none border border-main-blue rounded w-full
                                 py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                                 id="game-id" type="text" value={gameIdInputValue} onChange={handleGameIdChange}/>
                         </div>
