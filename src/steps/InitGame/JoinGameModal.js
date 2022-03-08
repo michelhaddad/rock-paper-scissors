@@ -15,7 +15,7 @@ export const JoinGameModal = ({joinGame, toggleJoinMenu}) => {
 
     return (
         <div
-            className="z-20 left-0 top-0 fixed w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center">
+            className="z-20 px-4 left-0 top-0 fixed w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center">
             <div className="bg-white pt-10 pb-6 px-8 rounded-xl text-main-blue tracking-widest text-3xl">
                 <div className="flex items-center mt-12 flex-col">
                     <form onSubmit={handleSubmit}>

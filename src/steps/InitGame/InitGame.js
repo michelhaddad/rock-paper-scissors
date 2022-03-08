@@ -23,16 +23,16 @@ export const InitGame = ({startGameAgainstPc, gameId, joinGame, createGame}) => 
             <div className="flex justify-center">
                 <img src={logo} alt="logo" className="object-contain h-40"/>
             </div>
-            <div className="flex justify-center items-center space-x-20 sm:space-x-20 md:space-x-40 mt-40">
-                <button onClick={create} className="tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
+            <div className="flex justify-center items-center flex-col lg:flex-row space-y-20 lg:space-y-0 lg:space-x-40 mt-20 lg:mt-40">
+                <button onClick={create} className="min-w-[14rem] tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
             hover:bg-white hover:text-main-blue hover:font-bold transition-colors">
                     CREATE GAME
                 </button>
-                <button onClick={toggleJoinMenu} className="tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
+                <button onClick={toggleJoinMenu} className="min-w-[14rem] tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
             hover:bg-white hover:text-main-blue hover:font-bold transition-colors">
                     JOIN GAME
                 </button>
-                <button onClick={startGameAgainstPc} className="tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
+                <button onClick={startGameAgainstPc} className="min-w-[14rem] tracking-widest text-white border-2 border-white rounded-lg py-1.5 px-9
             hover:bg-white hover:text-main-blue hover:font-bold transition-colors">
                     PLAY AGAINST PC
                 </button>

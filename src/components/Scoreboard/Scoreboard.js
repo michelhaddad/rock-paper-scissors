@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.svg";
 
 export const Scoreboard = ({userScore, opponentScore}) => {
     return (
-        <div className="flex justify-center px-4 sm:px-8">
+        <div className="flex justify-center px-1 sm:px-8">
             <div
                 className="border-header-outline border-4 rounded-3xl py-4 px-6 flex justify-between
                 space-x-8 w-full md:w-fit md:min-w-[700px]">
