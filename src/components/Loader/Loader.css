@@ -1,3 +1,5 @@
+@reference "../../index.css";
+
 .lds-ellipsis {
     display: inline-block;
     position: relative;
